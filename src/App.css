@@ -1,3 +1,36 @@
+/* Fontnya */
+@font-face {
+  font-family: "Ubuntu";
+  src: url('./Assets/fonts/Ubuntu-L.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "FFF_Tusj";
+  src: url('./Assets/fonts/FFF_Tusj.ttf');
+}
+
+
+/* default CSS */
+body{
+  font-weight: 400;
+  
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
 .App {
   text-align: center;
 }
@@ -13,16 +46,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -36,3 +59,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Formnya */
+
+.forminputan{
+  margin-left: 460px;
+  
+  
+  
+}
+
+.inputdatanya:hover{
+    box-shadow : 0px 0px 10px #2081ffda !important;
+
+    
+
+}
+
+.buttonform:hover{
+  box-shadow : 0px 0px 10px #0d5dc5 !important;
+
+    background-color: #0d5dc5;
+}
+
+/*END Formnya */
+
+
+/* MapList */
+.buttoncard:hover{
+  box-shadow : 0px 0px 10px #dfe2e7d8 !important;
+
+}
+
+.cardnya:hover{
+  box-shadow : 0px 0px 10px #dfe2e7d8 !important;
+
+}
+
+
+
+/*END MapList */
