@@ -9,7 +9,7 @@ export const List = () => {
 
     const tambahList = (list) => {
         const listBaru = [list, ...listnya]
-        
+
         setListnya(listBaru)
         console.log(listBaru)
 
@@ -17,17 +17,21 @@ export const List = () => {
     }
 
     const deleteListnya = (id) => {
-        const deleted = [...listnya].filter((list)=> list.id !== id)
+        const deleted = [...listnya].filter((list) => list.id !== id)
         setListnya(deleted)
     }
 
+
+    const updateList = (idList, valueBaru) => {
+        setListnya((previous) => previous.map((item) => item.id === idList ? valueBaru : item))
+    }
     // console.log(listnya)
 
     return (
         <div>
 
             <Formnya onSubmit={tambahList} />
-            <MapList listnya={listnya} deleteListnya={deleteListnya}/>
+            <MapList listnya={listnya} deleteListnya={deleteListnya} updateList={updateList} />
         </div>
 
     )
