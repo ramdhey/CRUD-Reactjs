@@ -12,7 +12,7 @@ export const MapList = ({ listnya }) => {
 
                         <Card.Body>
                             <Card.Title className='idnya'>I D : {item.id}</Card.Title>
-                            <Card.Text>
+                            <Card.Text className='textnya'>
                                 {item.text}
                             </Card.Text>
                             <Button variant="primary" className='mt-4 buttoncard' style={{ backgroundImage: 'linear-gradient(to right,#033E3E,#033E3E,#2E8B57)', border: 'none' }}>Update</Button>{'   '}
