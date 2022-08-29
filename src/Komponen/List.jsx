@@ -16,13 +16,18 @@ export const List = () => {
 
     }
 
+    const deleteListnya = (id) => {
+        const deleted = [...listnya].filter((list)=> list.id !== id)
+        setListnya(deleted)
+    }
+
     // console.log(listnya)
 
     return (
         <div>
 
             <Formnya onSubmit={tambahList} />
-            <MapList listnya={listnya} />
+            <MapList listnya={listnya} deleteListnya={deleteListnya}/>
         </div>
 
     )
